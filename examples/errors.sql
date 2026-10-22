@@ -1,0 +1,10 @@
+CREATE TABLE validation (id INT, name STRING, score FLOAT, active BOOL);
+INSERT INTO validation VALUES ('wrong type', 'Alex', 8.5, true);
+INSERT INTO validation VALUES (1, 'Alex');
+INSERT INTO validation VALUES (2147483648, 'Alex', 8.5, true);
+INSERT INTO validation VALUES (1, 'Alex', 8.5, 1);
+SELECT absent FROM validation;
+SELECT * FROM validation WHERE active > true;
+SELECT * FROM nonexistent;
+SELECT FROM validation;
+DROP TABLE validation;

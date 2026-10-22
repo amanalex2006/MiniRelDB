@@ -1,0 +1,10 @@
+*.exe
+*.o
+/minireldb
+/tests
+/database/*
+!/database/.gitkeep
+/test-output/
+*.tmp
+*.gcda
+*.gcno
